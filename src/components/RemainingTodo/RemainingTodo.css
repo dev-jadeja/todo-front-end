@@ -1,0 +1,27 @@
+.check.circle.icon.task-complete-icon {
+	cursor: pointer;
+	transition: color 0.1s;
+}
+
+.check.circle.icon.task-complete-icon:hover {
+	color: green;
+}
+
+.delete.icon.task-delete-icon {
+	cursor: pointer;
+	transition: color 0.1s;
+}
+
+.delete.icon.task-delete-icon:hover {
+	color: #dc4c3e;
+}
+
+div.task-title {
+	display: inline;
+	font-size: 17px;
+	overflow-wrap: break-word;
+}
+
+div.task-description {
+	color: grey;
+}

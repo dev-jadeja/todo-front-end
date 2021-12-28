@@ -1,0 +1,37 @@
+.ui.secondary.vertical.menu.app-sidebar {
+	position: fixed;
+	left: 0;
+	margin-top: 0;
+	height: calc(100% - 50px);
+	overflow: auto;
+	transform: translateX(-210px);
+	transition: transform 0.2s;
+	background-color: lightgray;
+	z-index: 1;
+}
+
+.ui.secondary.vertical.menu.app-sidebar.active {
+	transform: translateX(0px);
+}
+
+.ui.secondary.menu a.active.item {
+	background-color: rgb(173, 173, 173);
+}
+
+.ui.secondary.vertical.menu.app-sidebar > a.item {
+	overflow-wrap: break-word;
+	padding-left: 25px;
+}
+
+a.item > i {
+	display: none;
+	position: relative;
+}
+
+a.item:hover > i {
+	display: block;
+}
+
+a.item:hover > i:hover.close.icon {
+	color: #dc4c3e;
+}

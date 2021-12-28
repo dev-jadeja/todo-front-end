@@ -1,0 +1,71 @@
+.todos-container {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 50px;
+	margin-left: 210px;
+	width: calc(100vw - 210px);
+	overflow: auto;
+	transition: all 0.2s;
+	min-height: calc(100vh - 59.31px);
+}
+
+.todos-container.no-left-margin {
+	width: 100%;
+	margin-left: 0;
+}
+
+.ui.input {
+	margin-bottom: 20px;
+}
+
+.ui.form {
+  margin-bottom: 50px;
+}
+
+.remaining-container {
+  margin-bottom: 50px;
+}
+
+.todos-container .add-task-container > .ui.form > textarea {
+	margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+	.todos-container {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		cursor: default;
+		user-select: none;
+		pointer-events: none;
+	}
+
+	.todos-container.no-left-margin {
+		background-color: white;
+		cursor: auto;
+		user-select: auto;
+		pointer-events: all;
+	}
+
+	.todos-container .add-task-container > .ui.form > .ui.input > input {
+		opacity: 0.1;
+	}
+
+	.todos-container.no-left-margin
+		.add-task-container
+		> .ui.form
+		> .ui.input
+		> input {
+		opacity: 1;
+	}
+
+	.todos-container .add-task-container > .ui.form > textarea {
+		opacity: 0.1;
+	}
+
+	.todos-container.no-left-margin .add-task-container > .ui.form > textarea {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,38 @@
+.landing-container {
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 50px;
+	margin-left: 210px;
+	width: calc(100vw - 210px);
+	overflow: auto;
+	transition: all 0.2s;
+	min-height: calc(100vh - 59.31px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.landing-container.left-margin-zero {
+	width: 100%;
+	margin-left: 0;
+}
+
+@media (max-width: 750px) {
+	.landing-container {
+		width: 100%;
+		padding-left: 50px;
+		padding-right: 50px;
+		margin-left: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		cursor: default;
+		user-select: none;
+		pointer-events: none;
+	}
+
+	.landing-container.left-margin-zero {
+		background-color: white;
+		cursor: auto;
+		user-select: auto;
+		pointer-events: all;
+	}
+}

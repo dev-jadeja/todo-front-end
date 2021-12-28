@@ -1,0 +1,29 @@
+.check.circle.icon.completed-task-complete-icon {
+	cursor: pointer;
+	transition: color 0.1s;
+}
+
+.check.circle.icon.completed-task-complete-icon:hover {
+	color: green;
+}
+
+.delete.icon.completed-task-delete-icon {
+	cursor: pointer;
+	transition: color 0.1s;
+}
+
+.delete.icon.completed-task-delete-icon:hover {
+	color: #dc4c3e;
+}
+
+div.completed-task-title {
+	display: inline;
+	font-size: 17px;
+	overflow-wrap: break-word;
+	text-decoration: line-through;
+}
+
+div.completed-task-description {
+	color: grey;
+	text-decoration: line-through;
+}

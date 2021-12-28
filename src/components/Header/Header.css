@@ -1,0 +1,55 @@
+.ui.segment.app-segment {
+	background-color: #dc4c3e;
+	border-radius: 0;
+	color: white;
+	position: sticky;
+	top: 0;
+	opacity: 1;
+	z-index: 1;
+	margin-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ui.header.app-header {
+	color: white;
+	display: inline;
+}
+
+.angle.double.right.big.icon.toggle-button {
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.angle.double.right.big.icon.toggle-button:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+	border-radius: 2px;
+}
+
+.angle.double.right.big.icon.toggle-button.active {
+	transform: rotate(180deg);
+}
+
+.plus.big.icon.add-board-button {
+  font-size: 18px;
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.add-board-container {
+  margin-left: 50px;
+  padding: 4.27px;
+}
+
+.add-board-container:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 2px;
+}
